@@ -1,0 +1,1 @@
+from fellar.application import app

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    {% for group in groups %}
+        <li><a href='{{ url_for('.post_list', id=group.id) }}'>{{ group.name }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

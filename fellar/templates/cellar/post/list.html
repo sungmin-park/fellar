@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>{{ group.name }}</h1>
+<ul>
+    {% for post in posts %}
+        <li>
+            <a href="{{ post.permalink }}">{{ post.message or post.link }}</a>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
